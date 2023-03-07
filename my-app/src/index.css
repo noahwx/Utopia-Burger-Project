@@ -1,0 +1,88 @@
+@import url("https://use.typekit.net/zwg2myw.css");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: articulat-cf, sans-serif;
+  font-style: normal;
+}
+
+.Nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  width: 20vw;
+  transition: transform 250ms ease;
+}
+
+.Navitems {
+  font-size: clamp(1.7rem, 2vw, 1.7rem);
+  font-weight: 500;
+  position: relative;
+  top: 6.7vh;
+  height: 20vh;
+}
+
+.Navitem {
+  text-decoration: none;
+  padding: 1em;
+  color: #090c08;
+
+  transition: opacity 250ms ease, color 250ms ease;
+}
+
+.dditems {
+  text-align: center;
+  animation: slideIn 250ms linear;
+}
+
+.dditem {
+  font-size: clamp(1.5rem, 2vw, 1.5rem);
+  padding: 1em;
+  position: relative;
+  top: 2vh;
+  text-decoration: none;
+  color: #090c08;
+  transition: color 250ms ease;
+}
+
+.Navitems:hover > .Navitem {
+  opacity: 0.3;
+}
+
+.Navitems:hover > .Navitem:hover {
+  opacity: 1;
+  color: #ff4754;
+}
+
+.dditem:hover {
+  color: #ff4754;
+  text-decoration: underline;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* .Navitem.active {
+  color: #58b12e;
+} */
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.container {
+  background-color: #fff56f;
+  height: 100vh;
+}
